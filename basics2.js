@@ -12,7 +12,7 @@ else
 }
 
 //while
-let i=0;
+let i=0
 while(i < 10)
 {
     i++
@@ -21,6 +21,7 @@ while(i < 10)
 }
 
 //Do-while
+console.log("do-while")
 
 let x=0;
 do{
@@ -44,7 +45,7 @@ for(var k=1;k<=100;k++)
     {
         n++
         console.log(k)
-        if(n==3)
+        if(n==3) //This only prints the first 3
             break
     }
         
