@@ -1,4 +1,9 @@
 //Strings in JS
+
+//Importing class
+const Person = require('./basics7') //The class has now been imported from the basics7 file
+//exports which is the  CommonJS property to export a module.
+
  let day = "tuesday "
  console.log(day.slice(0,4))
  console.log(day[2])
@@ -27,4 +32,8 @@
     // starts from 5th index
  }
  console.log(count)
+
+ //Related to class
+ let person = new Person("Chris","Columbous");
+ console.log(person.fullName())
  
