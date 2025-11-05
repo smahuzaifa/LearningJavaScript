@@ -78,4 +78,31 @@ console.log(evenScores)
 //Map function
 //Create new array with even scores and multiple each by 3
 var Array3 = evenScores.map(score=>score*3)
+//For every element, it maps a new element after perfroming an operation
 console.log(Array3)
+
+// reduce: To combine all elements of an array into a single accumulated value 
+// (like sum or object).
+
+// filter: To create a new array containing only elements that meet a specific condition.
+
+// map: To create a new array by transforming each element of the original array.
+
+//Create new array with even scores and multiple each by 3 and then sum them
+var SumArray3 = Array3.reduce((sum,val)=>sum+val,0)
+console.log(SumArray3);
+
+//Chaining all commands
+var scores1 = [10,45,67,2,21,32,43,54];
+var chaintotal = scores1.filter(score=>score%2==0).map(score=>score*3).reduce((sum,val)=>sum+val,0)
+//All the operations in a single line
+console.log("The value after chaining the operations is "+chaintotal);
+
+//Sorting in an array
+let fruits = ["Apple","Orange","Mango","Watermelon"];
+console.log(fruits.sort()); //Can only sort the string, and here it is in ascending order
+console.log(fruits.reverse()); //Sorting in descending order
+console.log("Without custom logic "+scores1.sort()); //As we can see it breaks here
+//To work with numbers we need to define custom logic in sort
+console.log("With custom logic "+scores1.sort((a,b)=>a-b));
+console.log("With custom logic "+scores1.reverse((a,b)=>a-b));
